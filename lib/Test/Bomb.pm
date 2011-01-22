@@ -13,6 +13,10 @@ our @EXPORT = qw/ bomb /;
 
 Test::Bomb
 
+=head1 VERSION
+
+version 0.002
+
 =head1 SYNOPSIS
 
 use this test to ignore part of your system until
@@ -147,4 +151,3 @@ See http://dev.perl.org/licenses/ for more information.
 =cut
 
 1;
-
