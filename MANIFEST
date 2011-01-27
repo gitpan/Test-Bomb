@@ -3,6 +3,8 @@ MANIFEST
 META.yml
 Makefile.PL
 README
+TODO
+changelog
 dist.ini
 lib/Test/Bomb.pm
 t/Bomb.t
