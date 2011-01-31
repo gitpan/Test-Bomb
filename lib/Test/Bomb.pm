@@ -15,7 +15,7 @@ Test::Bomb
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
@@ -97,8 +97,8 @@ David Delikat, C<< <david-delikat at usa.net> >>
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-temp at rt.cpan.org>, or through
-the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=temp>.  I will be notified, and then you'll
+Please report any bugs or feature requests to C<bug-test-bomb at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=test-bomb>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
 
@@ -108,7 +108,7 @@ automatically be notified of progress on your bug as I make changes.
 
 You can find documentation for this module with the perldoc command.
 
-    perldoc temp
+    perldoc Test::Bomb
 
 
 You can also look for information at:
@@ -117,19 +117,19 @@ You can also look for information at:
 
 =item * RT: CPAN's request tracker
 
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=temp>
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=test-bomb>
 
 =item * AnnoCPAN: Annotated CPAN documentation
 
-L<http://annocpan.org/dist/temp>
+L<http://annocpan.org/dist/test-bomb>
 
 =item * CPAN Ratings
 
-L<http://cpanratings.perl.org/d/temp>
+L<http://cpanratings.perl.org/d/test-bomb>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/temp/>
+L<http://search.cpan.org/dist/test-bomb/>
 
 =back
 
@@ -150,4 +150,4 @@ See http://dev.perl.org/licenses/ for more information.
 
 =cut
 
-1;
+1; # End of Test::Bomb

@@ -20,9 +20,11 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Test::Bomb',
   'PREREQ_PM' => {
+    'Date::Parse' => '0',
+    'Test::More' => '0',
     'Test::Tester' => '0'
   },
-  'VERSION' => '0.003',
+  'VERSION' => '0.004',
   'test' => {
     'TESTS' => 't/*.t'
   }

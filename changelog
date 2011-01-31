@@ -1,4 +1,4 @@
-{{$NEXT}}
+0.004     2011-01-31 13:49:19 CST6CDT
 	added prereq Test::Tester that caused some failures...
 	increased dzil usage
 
