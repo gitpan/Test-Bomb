@@ -11,7 +11,7 @@ our @EXPORT = qw/ bomb /;
 
 
 my @configFiles = (
-    $ENV{TESTBOMBCONFIG} // '',
+    $ENV{TESTBOMBCONFIG} || '',
     './t/tbc', './t/testbombconfig',
     './.tbc', './.testbombconfig',
     './tbc', './testbombconfig',
@@ -47,7 +47,7 @@ sub readConfig {
     local( $Test::Builder::Level ) = 3;
     my $name = shift;
     my $stringDate;
-    my $configFile = ( grep { -f $_ } @configFiles )[0] // '';
+    my $configFile = ( grep { -f $_ } @configFiles )[0] || '';
     open IN, $configFile or ok( 0, 'failed to open config file'),
                            return 'configFail';
     ($stringDate) = map { $_->[0] eq $name ? $_->[1] : () }
@@ -89,7 +89,7 @@ Test::Bomb - a test which succeeds until a deadline passes ( a time bomb )
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 
