@@ -3,6 +3,8 @@ use warnings;
 package Test::Bomb;
 # ABSTRACT: a test which succeeds until a deadline passes ( a time bomb )
 
+our $VERSION = 0.007;
+
 use Exporter qw/import/;
 use Date::Parse;
 use Test::More;
@@ -15,8 +17,8 @@ my @configFiles = (
     './t/tbc', './t/testbombconfig',
     './.tbc', './.testbombconfig',
     './tbc', './testbombconfig',
-    $ENV{HOME}.'/.tbc',
-    $ENV{HOME}.'/.testbombconfig',
+    ($ENV{HOME}||'.').'/.tbc',
+    ($ENV{HOME}||'.').'/.testbombconfig',
 );
 
 
@@ -51,7 +53,7 @@ sub readConfig {
     open IN, $configFile or ok( 0, 'failed to open config file'),
                            return 'configFail';
     ($stringDate) = map { $_->[0] eq $name ? $_->[1] : () }
-			 map { s/(^\s+|\s+$|['"])//g; chomp; [split /\s*=\s*/,$_] }
+		    map { s/(^\s+|\s+$|['"])//g; chomp; [split /\s*=\s*/,$_] }
 			     ( <IN> );
     close IN;
     ok( 0, 'bomb group is not defined: '.$name), return 'configFail'
@@ -89,7 +91,7 @@ Test::Bomb - a test which succeeds until a deadline passes ( a time bomb )
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =head1 SYNOPSIS
 

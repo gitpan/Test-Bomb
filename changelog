@@ -1,7 +1,4 @@
-0.006     2011-03-03 19:21:49 America/Chicago
-
-        removed perl 5.10 operators -- makes module useful
-        to more users -- and pass more CPAN tests.
+0.007     2011-03-24 23:35:51 America/Chicago
 
 0.005     2011-03-02 18:59:16 America/Chicago
         added group/config file and distribution checking

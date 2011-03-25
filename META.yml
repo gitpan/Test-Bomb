@@ -16,4 +16,4 @@ requires:
   Date::Parse: 0
   Test::More: 0
   Test::Tester: 0
-version: 0.006
+version: 0.007
